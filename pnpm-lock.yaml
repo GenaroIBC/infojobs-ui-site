@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   infojobs-ui:
-    specifier: 0.5.1
-    version: 0.5.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: 1.0.1
+    version: 1.0.1(react-dom@18.2.0)(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1224,8 +1224,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /infojobs-ui@0.5.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-5l347PSpt3M6Wxi34k/69GdUTYcA5PtLqPsDXS02LzDQdnMXHPUZ9kzH7rIJxysrNeBUxUu9HDe3N8SqqX8Hjg==}
+  /infojobs-ui@1.0.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-wDA74QTzVJ1TOegNPk/jqF4EJN8Ld7Vn2IMwU1AqOtIxwc0urzPcKCFAv6b1J2AI5jqz45Psag3hcK+LI70CCg==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0

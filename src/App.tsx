@@ -4,7 +4,8 @@ import {
   Button,
   TabGroup,
   Toggle,
-  Tooltip
+  Tooltip,
+  Modal
 } from "infojobs-ui"
 
 const ASIDE_LINKS = [
@@ -19,6 +20,10 @@ const ASIDE_LINKS = [
   {
     href: "#button",
     title: "Button"
+  },
+  {
+    href: "#modal",
+    title: "Modal"
   },
   {
     href: "#tab-group",
@@ -118,6 +123,38 @@ function App() {
               secondary
             </Button>
           </nav>
+
+          <h5 id="modal">Modal</h5>
+          <h6>Modal with title</h6>
+          <Modal openModalButtonText={"With title"} title={"I am a title"}>
+            <ModalExampleContent />
+          </Modal>
+
+          <h6>Close on backdrop click</h6>
+          <Modal
+            openModalButtonText={"Close on backdrop click"}
+            closeOnBackdropClick
+          >
+            <ModalExampleContent />
+          </Modal>
+
+          <h6>Close on ESC click</h6>
+          <Modal openModalButtonText={"Close on ESC click"} closeOnEscClick>
+            <ModalExampleContent />
+          </Modal>
+
+          <h6>Confirm and cancel buttons</h6>
+          <Modal
+            openModalButtonText={"Confirm modal"}
+            onCancel={() => {
+              console.log("user canceled")
+            }}
+            onConfirm={() => {
+              console.log("user confirmed")
+            }}
+          >
+            <ModalExampleContent />
+          </Modal>
 
           <h5 id="tooltip">Tooltip</h5>
 
@@ -341,3 +378,35 @@ function App() {
 }
 
 export default App
+
+const ModalExampleContent = () => (
+  <div className="flex gap-4">
+    <img
+      className="rounded-md"
+      src="https://picsum.photos/300"
+      alt="Random example image"
+    />
+
+    <div className="flex flex-col gap-4">
+      <span className="font-medium text-lg">Lorem Ipsum Dolor</span>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto
+        soluta maxime quae excepturi eum debitis aperiam perferendis nemo! Amet
+        atque dignissimos quasi reiciendis aspernatur quis rem ullam libero
+        animi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto
+        soluta maxime quae excepturi eum debitis aperiam perferendis nemo! Amet
+        atque dignissimos quasi reiciendis aspernatur quis rem ullam libero
+        animi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus iusto
+        soluta maxime quae excepturi eum debitis aperiam perferendis nemo! Amet
+        atque dignissimos quasi reiciendis aspernatur quis rem ullam libero
+        animi.
+      </p>
+    </div>
+  </div>
+)
