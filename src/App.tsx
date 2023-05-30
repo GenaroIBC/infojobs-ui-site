@@ -1,4 +1,3 @@
-import "infojobs-ui/dist/style.css"
 import {
   Tooltip,
   Accordion,
