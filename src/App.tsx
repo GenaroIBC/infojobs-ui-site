@@ -6,6 +6,8 @@ import {
   Toggle,
   Tooltip,
   Modal
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
 } from "infojobs-ui"
 
 const ASIDE_LINKS = [
