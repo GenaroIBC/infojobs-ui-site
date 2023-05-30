@@ -1,10 +1,10 @@
 import {
-  Tooltip,
   Accordion,
-  Button,
   Breadcrumb,
+  Button,
   TabGroup,
-  Toggle
+  Toggle,
+  Tooltip
 } from "infojobs-ui"
 
 const ASIDE_LINKS = [
@@ -17,12 +17,20 @@ const ASIDE_LINKS = [
     title: "Breadcrumb"
   },
   {
-    href: "#tooltip",
-    title: "Tooltip"
-  },
-  {
     href: "#button",
     title: "Button"
+  },
+  {
+    href: "#tab-group",
+    title: "Tab Group"
+  },
+  {
+    href: "#toggle",
+    title: "Toggle"
+  },
+  {
+    href: "#tooltip",
+    title: "Tooltip"
   }
 ]
 
@@ -32,10 +40,15 @@ function App() {
       <section className="grid grid-cols-4 relative max-w-page-max-width mx-auto">
         <aside className="col-span-1 p-4 sticky h-screen top-0">
           <nav>
-            <ul className="flex flex-col gap-2 mt-12">
+            <ul className="flex flex-col mt-12">
               {ASIDE_LINKS.map(({ href, title }) => (
                 <li key={href}>
-                  <a href={href}>{title}</a>
+                  <a
+                    className="block hover:bg-white text-gray-700 hover:text-black  px-4 py-2 bg-white/60"
+                    href={href}
+                  >
+                    {title}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -47,8 +60,21 @@ function App() {
             Infojobs UI
           </h1>
 
-          <h5 id="button">Button</h5>
+          <h5 id="accordion">Accordion</h5>
+          <Accordion
+            items={[
+              { element: <span>hello</span>, label: "1" },
+              { element: <span>hello</span>, label: "2" },
+              { element: <span>hello</span>, label: "3" },
+              { element: <span>hello</span>, label: "4" },
+              { element: <span>hello</span>, label: "5" }
+            ]}
+          />
 
+          <h5 id="breadcrumb">Breadcrumb</h5>
+          <Breadcrumb items={["Home", "Dashboard", "Settings", "API Usage"]} />
+
+          <h5 id="button">Button</h5>
           <h6>Primary</h6>
           <nav className="flex gap-2 items-center">
             <Button color="blue" variant="primary">
@@ -92,24 +118,6 @@ function App() {
               secondary
             </Button>
           </nav>
-
-          <h5 id="accordion">Accordion</h5>
-
-          <h6>Hover and click</h6>
-          <Accordion
-            items={[
-              { element: <span>hello</span>, label: "1" },
-              { element: <span>hello</span>, label: "2" },
-              { element: <span>hello</span>, label: "3" },
-              { element: <span>hello</span>, label: "4" },
-              { element: <span>hello</span>, label: "5" }
-            ]}
-          />
-
-          <h6>Click only</h6>
-
-          <h5 id="breadcrumb">Breadcrumb</h5>
-          <Breadcrumb items={["Home", "Dashboard", "Settings", "API Usage"]} />
 
           <h5 id="tooltip">Tooltip</h5>
 
