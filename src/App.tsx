@@ -42,8 +42,8 @@ const ASIDE_LINKS = [
 function App() {
   return (
     <>
-      <section className="grid grid-cols-4 relative max-w-page-max-width mx-auto">
-        <aside className="col-span-1 p-4 sticky h-screen top-0">
+      <section className="grid grid-cols-1 md:grid-cols-4 relative max-w-page-max-width mx-auto">
+        <aside className="md:col-span-1 p-4 md:sticky md:h-screen top-0">
           <nav>
             <ul className="flex flex-col mt-12">
               {ASIDE_LINKS.map(({ href, title }) => (
@@ -60,7 +60,7 @@ function App() {
           </nav>
         </aside>
 
-        <main className="p-4 col-span-3">
+        <main className="p-4 md:col-span-3">
           <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-fuchsia-600">
             Infojobs UI
           </h1>
@@ -81,7 +81,7 @@ function App() {
 
           <h5 id="button">Button</h5>
           <h6>Primary</h6>
-          <nav className="flex gap-2 items-center">
+          <nav className="flex flex-wrap gap-2 items-center">
             <Button color="blue" variant="primary">
               primary
             </Button>
@@ -103,7 +103,7 @@ function App() {
           </nav>
 
           <h6>Secondary</h6>
-          <nav className="flex gap-2 items-center">
+          <nav className="flex flex-wrap gap-2 items-center">
             <Button color="blue" variant="secondary">
               secondary
             </Button>
@@ -243,7 +243,7 @@ function App() {
           />
 
           <h6>Tabs</h6>
-          <p>You can use any component as tab content</p>
+          <p className="mb-4">You can use any component as tab content</p>
 
           <TabGroup
             tabs={[
