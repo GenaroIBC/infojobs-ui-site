@@ -1,7 +1,7 @@
 export function ExternalLinksNavBar() {
   return (
-    <nav className="my-12 py-12 bg-slate-800 h-full">
-      <ul className="text-white flex flex-col gap-2 p-4">
+    <nav className="my-8 px-4 py-8 bg-slate-800 h-full">
+      <ul className="text-white flex flex-col gap-2">
         <li>
           <a
             className="flex gap-2 items-center"
