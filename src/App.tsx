@@ -360,10 +360,12 @@ function App() {
 
             <h6>In a block element</h6>
             <Tooltip label="Tooltip in a long paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
-              laboriosam. Ipsam consequatur quae dolore sunt quaerat eos
-              repudiandae at. Illo ullam iste ipsa excepturi a corrupti,
-              voluptate non nesciunt dolorem!
+              <p className="bg-slate-600 text-white p-4 rounded-md">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Maxime, laboriosam. Ipsam consequatur quae dolore sunt quaerat
+                eos repudiandae at. Illo ullam iste ipsa excepturi a corrupti,
+                voluptate non nesciunt dolorem!
+              </p>
             </Tooltip>
           </section>
         </main>
