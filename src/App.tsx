@@ -44,8 +44,8 @@ const ASIDE_LINKS = [
 function App() {
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-4 relative max-w-page-max-width mx-auto">
-        <aside className="md:col-span-1 p-4 md:sticky md:h-screen top-0">
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-4 relative max-w-page-max-width mx-auto">
+        <aside className="md:col-span-1 py-4 md:sticky md:h-screen top-0 bg-slate-700">
           <div className="font-extrabold flex items-center gap-2 mt-4 mb-6">
             <img
               src="/infojobs-ui-logo.png"
@@ -63,7 +63,7 @@ function App() {
               {ASIDE_LINKS.map(({ href, title }) => (
                 <li key={href}>
                   <a
-                    className="block hover:bg-white text-gray-700 hover:text-black  px-4 py-2 bg-white/60"
+                    className="block hover:bg-black/40 text-gray-100 hover:text-white hover:no-underline px-4 py-2"
                     href={href}
                   >
                     {title}
@@ -74,7 +74,7 @@ function App() {
           </nav>
         </aside>
 
-        <main className="p-4 md:col-span-3">
+        <main className="p-4 md:col-span-3 mt-12">
           <h1 className="font-extrabold flex items-center gap-2">
             <img
               src="/infojobs-ui-logo.png"
@@ -86,6 +86,10 @@ function App() {
               Infojobs UI
             </span>
           </h1>
+
+          <h2 className="text-2xl my-4 font-semibold">
+            React components following the InfoJobs style guide
+          </h2>
 
           <h5 id="accordion">Accordion</h5>
           <Accordion
