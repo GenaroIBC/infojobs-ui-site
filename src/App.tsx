@@ -10,13 +10,14 @@ import {
   // @ts-ignore
 } from "infojobs-ui"
 import { NavBar } from "./components/NavBar"
+import { ExternalLinksNavBar } from "./components/ExternalLinksNavBar"
 
 function App() {
   return (
     <>
       <section className="grid grid-cols-1 gap-4 md:grid-cols-4 relative max-w-page-max-width mx-auto">
         <aside className="md:col-span-1 py-4 md:sticky md:h-screen top-0 bg-slate-700">
-          <div className="font-extrabold flex items-center gap-2 mt-4 mb-6">
+          <div className="font-extrabold flex items-center gap-2 mt-4 mb-6 p-4 justify-center">
             <img
               src="/infojobs-ui-logo.png"
               alt="InfoJobs logo"
@@ -29,6 +30,8 @@ function App() {
           </div>
 
           <NavBar />
+
+          <ExternalLinksNavBar />
         </aside>
 
         <main className="p-4 md:col-span-3 mt-12">
