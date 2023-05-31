@@ -47,10 +47,6 @@ export function NavBar() {
         setCurrentSection(
           firstIntersectingEntry.target.previousElementSibling?.id ?? ""
         )
-        firstIntersectingEntry.target.classList.toggle(
-          "section-visible",
-          firstIntersectingEntry.isIntersecting
-        )
       },
       {
         threshold: 1.0

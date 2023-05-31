@@ -356,7 +356,7 @@ function App() {
       </section>
 
       <div className="bg-slate-950">
-        <footer className="max-w-page-max-width mx-auto text-gray-50 flex flex-col gap-4 w-full mt-12 py-12 px-4">
+        <footer className="max-w-page-max-width mx-auto text-gray-50 flex flex-col gap-4 w-full py-12 px-4">
           <p className="text-center">
             Developed with ❤️ by <a href="https://gena.dev">Genaro Bonavita</a>{" "}
             in 2023
