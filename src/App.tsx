@@ -48,8 +48,10 @@ function App() {
             React components following the InfoJobs style guide
           </h2>
 
-          <h5 id="accordion">Accordion</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="accordion">
+            Accordion
+          </h5>
+          <section className="mb-12">
             <Accordion
               items={[
                 { element: <span>hello</span>, label: "First element" },
@@ -59,15 +61,19 @@ function App() {
             />
           </section>
 
-          <h5 id="breadcrumb">Breadcrumb</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="breadcrumb">
+            Breadcrumb
+          </h5>
+          <section className="mb-12">
             <Breadcrumb
               items={["Home", "Dashboard", "Settings", "API Usage"]}
             />
           </section>
 
-          <h5 id="button">Button</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="button">
+            Button
+          </h5>
+          <section className="mb-12">
             <h6>Primary</h6>
             <nav className="flex flex-wrap gap-2 items-center">
               <Button color="blue" variant="primary">
@@ -113,8 +119,10 @@ function App() {
             </nav>
           </section>
 
-          <h5 id="modal">Modal</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="modal">
+            Modal
+          </h5>
+          <section className="mb-12">
             <h6>Modal with title</h6>
             <Modal openModalButtonText={"With title"} title={"I am a title"}>
               <ModalExampleContent />
@@ -147,8 +155,10 @@ function App() {
             </Modal>
           </section>
 
-          <h5 id="tabs">Tabs</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="tabs">
+            Tabs
+          </h5>
+          <section className="mb-12">
             <p className="mb-4">You can use any component as tab content</p>
 
             <TabGroup
@@ -265,8 +275,10 @@ function App() {
             />
           </section>
 
-          <h5 id="toggle">Toggle</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="toggle">
+            Toggle
+          </h5>
+          <section className="mb-12">
             <Toggle
               onToggle={() => {
                 void 0
@@ -274,8 +286,10 @@ function App() {
             />
           </section>
 
-          <h5 id="tooltip">Tooltip</h5>
-          <section className="my-12">
+          <h5 className="mt-12" id="tooltip">
+            Tooltip
+          </h5>
+          <section className="mb-12">
             <h6>In an inline element</h6>
             <div className="flex gap-4 mb-8">
               <Tooltip direction="top" label="Mark as favorite">
